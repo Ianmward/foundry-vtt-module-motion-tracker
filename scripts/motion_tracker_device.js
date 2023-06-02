@@ -272,7 +272,7 @@ export class MotionTrackerDevice
 	{
 		if(MotionTrackerDevice.PIXILoader === null)
 		{
-			MotionTrackerDevice.PIXILoader =  new PIXI.Loader();
+			MotionTrackerDevice.PIXILoader =  PIXI.Loader;
 			MotionTrackerDevice.PIXILoader
 			.add([this.textures.background.M314, this.textures.background.Arious, this.textures.ping])
 			.load(this.loadTexturesFinish.bind(this));
